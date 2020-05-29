@@ -1,5 +1,5 @@
 ## This functions cache the inverse of a given matrix
-## They are useful for repetitive computations 
+## They are useful for repetitive computations (loops) 
 
 ## makeCacheMatrix creates a special matrix that is
 ## a list with a function to:
@@ -21,11 +21,11 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## cacheSolve calculates de inverse if the previous
+## cacheSolve calculates de inverse of the previous
 ## matrix. It first checks if the inverse was 
 ## already calculated. If so, it gets the inverse 
-## from the previous list showing a meesage. If not,
-## it calculates the inverse and cache it
+## from the previous list showing a message. If not,
+## it calculates the inverse and caches it
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
